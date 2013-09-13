@@ -1,0 +1,2 @@
+v0.1, 9/13/2013 -- Initial release
+v0.2, 9/13/2013 -- removed numpy module
