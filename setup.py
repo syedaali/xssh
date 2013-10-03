@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
     name='xssh',
-    version='0.2',
+    version='0.3',
     author='Syed Ali',
     author_email='syed_a_ali@yahoo.com',
     packages=['xssh'],
@@ -14,5 +14,6 @@ setup(
         "argparse >= 1.2.1",
         "crypto >= 1.1.0",
         "paramiko >= 1.11.0",
+        "python-hostlist >= 1.14",
     ],
 )
