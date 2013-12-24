@@ -20,7 +20,7 @@ def CheckArgs():
         Examples: 
         xssh -r host[1-10].domain.com -c "uname -a; uptime" -n 3
         xssh -i infile -c "grep -i nameserver /etc/resolv.conf" -2 -o outfile
-        Beta software, use at your own risk''', version='0.3')
+        Beta software, use at your own risk''', version='0.4')
     parser.add_argument('-n', action="store", type=int,
                         help="number of processes to fork, defaults to 1")
     parser.add_argument('-t', action="store", type=int,
