@@ -1,3 +1,4 @@
 v0.1, 9/13/2013 -- Initial release
 v0.2, 9/13/2013 -- removed numpy module
 v0.3, 10/2/2013 -- added support for hostrange
+v0.4, 12/24/2013 -- fixed couple of silly bugs
