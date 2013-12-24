@@ -117,7 +117,7 @@ def SshToHosts(hostlist, username, passwd, sysargs):
             print 'ERROR:ssh failed on', host
 
 
-def MultiProcess(processestocreate, username, passwd, splithostlist):
+def MultiProcess(processestocreate, username, passwd, splithostlist,sysargs):
     """Forks off different processes based on the number specified."""
     childpid = []
     for counter in range(processestocreate):
@@ -148,7 +148,7 @@ def main():
     # Split the input hostlist in equal sizes
     if sysargs['forks'] > 1:
         hostlist = dns_ok
-        sizeofeachlist = len(hostlist) / forks
+        sizeofeachlist = len(hostlist) / sysargs['forks']
         splithostlist = [hostlist[x:x + sizeofeachlist]
                          for x in xrange(0, len(hostlist), sizeofeachlist)]
         processestocreate = len(splithostlist)
